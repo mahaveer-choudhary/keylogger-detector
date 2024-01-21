@@ -27,3 +27,9 @@ navigate to the directory
   ```bash
  cd keylogger-detector
   ```
+
+run the script 
+  ```bash
+sudo python keylogger-detector.py
+```
+
