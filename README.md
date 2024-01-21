@@ -12,3 +12,13 @@ Keylogger detector aims to provide extra layer of security by providing a montor
 This tool is useful for users who want to ensure the security of their system and protect against potential threats posed by keyloggers. 
 It offers the flexibility to block, or remove or investigate the location of the identified keylogger script. 
 
+
+## Installation 
+
+To use the Keylogger detector, use these steps : 
+
+Clone the repository in your local machine 
+
+  ```bash
+      git clone https://github.com/mahaveer-choudhary/keylogger-detector
+
