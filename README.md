@@ -28,8 +28,29 @@ navigate to the directory
  cd keylogger-detector
   ```
 
+This will setup keylogger detector in your machine. Make sure that you have installed python's latest version in your machine.
+
 run the script 
   ```bash
 sudo python keylogger-detector.py
 ```
+
+## Usage 
+
+1. Run the script
+   ```bash
+   sudo python keylogger-detector.py
+   ```
+
+   1. Choose your option from menu:
+      option 1 : Scan for a particular location
+      option 2 : Detect keylogger automatically
+      option 3 : Exit
+
+   2. Depending on your choice, follow the on-screen instructions.
+      * For scanning a particular location, Enter the directory or drive path to scan.
+      * To detect the keyloggers, follow the prompts and take necessary actions.
+      * Use option 3 to exit the program.
+
+      The keylogger detector provide feedback based on your actions you choose, helping you identify and handle potential keylogger on your system.
 
