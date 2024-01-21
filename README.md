@@ -64,7 +64,8 @@ This will setup keylogger detector in your machine. Make sure that you have inst
       The keylogger detector provide feedback based on your actions you choose, helping you identify and handle potential keylogger on your system.
 
 
-![Image](https://drive.google.com/uc?export=view&id=1tYl4sIZIH2Kfm8UbI1wZPpaQTLBAWk8G)
+![image 0](https://drive.google.com/uc?export=view&id=1gz11l-cM2_yQqo9hI1ZtIFadRA_KLUDH)
+![Image 1](https://drive.google.com/uc?export=view&id=1tYl4sIZIH2Kfm8UbI1wZPpaQTLBAWk8G)
 
 ![Image 2](https://drive.google.com/file/d/1F2QmNXrDn2qm-DEq5pjABszVzwZdR0Th/view?usp=sharing)
 
