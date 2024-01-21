@@ -12,6 +12,16 @@ Keylogger detector aims to provide extra layer of security by providing a montor
 This tool is useful for users who want to ensure the security of their system and protect against potential threats posed by keyloggers. 
 It offers the flexibility to block, or remove or investigate the location of the identified keylogger script. 
 
+### Email monitoring 
+keyloggers work by logging all the keystrokes and storing the file locally for a fixed period of time, after which they send the log file to the hacker through a email.
+Keylogger Detector monitors most used SMTP ports to detect the processes trying to communicate using 
+#### Popular SMTP servers monitored by keylogger detector 
+```smtp.gmail.com          ssl             465
+   smtp.gmail.com          StartTLS        587
+   smtp.live               StartTLS        587
+   smtp.office365.com      StartTLS        587
+   smtp.mail.yahoo.com     StartTLS        587
+```
 
 ## Installation 
 
