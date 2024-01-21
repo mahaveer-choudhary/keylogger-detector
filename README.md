@@ -68,4 +68,4 @@ This will setup keylogger detector in your machine. Make sure that you have inst
 
 ![Image 2](https://drive.google.com/file/d/1F2QmNXrDn2qm-DEq5pjABszVzwZdR0Th/view?usp=sharing)
 
-![image 3](https://drive.google.com/file/d/1F2QmNXrDn2qm-DEq5pjABszVzwZdR0Th/view?usp=sharing)
+![image 3](https://drive.google.com/uc?export=view&id=1F2QmNXrDn2qm-DEq5pjABszVzwZdR0Th)
