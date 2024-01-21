@@ -22,3 +22,8 @@ Clone the repository in your local machine
   ```bash
 git clone https://github.com/mahaveer-choudhary/keylogger-detector
 
+  ```
+navigate to the directory 
+  ```bash
+ cd keylogger-detector
+  ```
