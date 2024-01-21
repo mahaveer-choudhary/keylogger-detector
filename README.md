@@ -28,12 +28,11 @@ navigate to the directory
  cd keylogger-detector
   ```
 
-This will setup keylogger detector in your machine. Make sure that you have installed python's latest version in your machine.
-
 run the script 
   ```bash
 sudo python keylogger-detector.py
 ```
+This will setup keylogger detector in your machine. Make sure that you have installed python's latest version in your machine.
 
 ## Usage 
 
