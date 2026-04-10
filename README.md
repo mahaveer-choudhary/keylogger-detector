@@ -1,71 +1,96 @@
+<div align="center">
+  <h1>🛡️ Keylogger Detector</h1>
+  <p><i>A powerful Python utility to scan, detect, and terminate keyloggers on your system.</i></p>
 
-# KEYLOGGER DETECTOR 
+  [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
+  [![Platform](https://img.shields.io/badge/Platform-Linux%20%7C%20Windows-lightgrey)](#)
+  [![License](https://img.shields.io/badge/License-MIT-green)](#)
+</div>
 
-warns the user when a malicious program or keylogger tries to send data from your device.
+---
 
-## Description 
+## 📖 Description 
 
-This keylogger detector is a python script designed to identify and locate potential keyloggers running on a system. It scans specific Directories for python scripts exhibiting keylogger patterns, providing users with the ability to take actions against detecting keylogger in your system. 
+This **Keylogger Detector** is an advanced Python script designed to actively identify and locate potential keyloggers running on a system. It provides an extra layer of security by scanning directories for keylogger patterns and dynamically monitoring active network processes. It intercepts malicious programs attempting to send logged keystrokes from your device and provides you with the tools to take immediate action.
 
-Keylogger detector aims to provide extra layer of security by providing a montoring tool that monitors the common ways keylogger send the information from the computer to the hacker and warns the user for the same. 
+### ✨ Key Features
+- **Static File Scanning**: Scan specific directories or drives for Python scripts exhibiting common keylogger behavior patterns.
+- **Dynamic Connection Monitoring**: Track active processes attempting to communicate over targeted SMTP ports.
+- **Actionable Defense**: Terminate malicious processes, delete host files, or investigate their exact system locations.
+- **Whitelist/Blacklist Manager**: Safely mark trusted processes to avoid false positives in future scans.
+- **Modern CLI Interface**: A beautifully formatted, interactive dashboard utilizing `rich` and `colorama`.
 
-This tool is useful for users who want to ensure the security of their system and protect against potential threats posed by keyloggers. 
-It offers the flexibility to block, or remove or investigate the location of the identified keylogger script. 
+---
 
-### Email monitoring 
-keyloggers work by logging all the keystrokes and storing the file locally for a fixed period of time, after which they send the log file to the hacker through a email.
-Keylogger Detector monitors most used SMTP ports to detect the processes trying to communicate using 
-#### Popular SMTP servers monitored by keylogger detector 
-```smtp.gmail.com          ssl             465
-   smtp.gmail.com          StartTLS        587
-   smtp.live               StartTLS        587
-   smtp.office365.com      StartTLS        587
-   smtp.mail.yahoo.com     StartTLS        587
-```
+## 📡 Email / SMTP Monitoring 
 
-## Installation 
+Keyloggers typically log keystrokes locally for a fixed period before attempting to send the log file to an attacker via email. Operating dynamically, Keylogger Detector monitors the most frequently abused SMTP ports to catch these connections in the act.
 
-To use the Keylogger detector, use these steps : 
+#### Popular SMTP servers monitored to detect exfiltration:
+| Mail Provider | Security Type | Port |
+| :--- | :--- | :--- |
+| **Gmail** (`smtp.gmail.com`) | SSL | 465 |
+| **Gmail** (`smtp.gmail.com`) | StartTLS | 587 |
+| **Outlook / Live** (`smtp.live.com`) | StartTLS | 587 |
+| **Office 365** (`smtp.office365.com`) | StartTLS | 587 |
+| **Yahoo Mail** (`smtp.mail.yahoo.com`) | StartTLS | 587 |
+*(Also actively monitors port `2525`)*
 
-Clone the repository in your local machine 
+---
 
-  ```bash
-git clone https://github.com/mahaveer-choudhary/keylogger-detector
+## ⚙️ Installation 
 
-  ```
-navigate to the directory 
-  ```bash
- cd keylogger-detector
-  ```
+To use the Keylogger detector, follow these steps: 
 
-run the script 
-  ```bash
-sudo python keylogger-detector.py
-```
-This will setup keylogger detector in your machine. Make sure that you have installed python's latest version in your machine.
-
-## Usage 
-
-1. Run the script
+1. **Clone the repository** to your local machine:
    ```bash
-   sudo python keylogger-detector.py
+   git clone https://github.com/mahaveer-choudhary/keylogger-detector
+   cd keylogger-detector
    ```
 
-   1. Choose your option from menu:
-      option 1 : Scan for a particular location
-      option 2 : Detect keylogger automatically
-      option 3 : Exit
+2. **Install Required Dependencies**:
+   The tool utilizes libraries like `psutil`, `rich`, and `colorama`. Ensure you have Python installed and run:
+   ```bash
+   pip install psutil rich colorama
+   ```
 
-   2. Depending on your choice, follow the on-screen instructions.
-      * For scanning a particular location, Enter the directory or drive path to scan.
-      * To detect the keyloggers, follow the prompts and take necessary actions.
-      * Use option 3 to exit the program.
+3. **Run the script**:
+   ```bash
+   # On Linux (sudo is recommended for full port tracking)
+   sudo python3 keylogger-detector.py
 
-      The keylogger detector provide feedback based on your actions you choose, helping you identify and handle potential keylogger on your system.
+   # On Windows (Run Command Prompt/Powershell as Administrator)
+   python keylogger-detector.py
+   ```
 
+---
 
-![image 0](https://drive.google.com/uc?export=view&id=1gz11l-cM2_yQqo9hI1ZtIFadRA_KLUDH)
-![Image 1](https://drive.google.com/uc?export=view&id=1tYl4sIZIH2Kfm8UbI1wZPpaQTLBAWk8G)
-![image 3](https://drive.google.com/uc?export=view&id=1F2QmNXrDn2qm-DEq5pjABszVzwZdR0Th)
+## 🚀 Usage 
 
+Launch the interactive dashboard to interact with the protection tools. 
 
+1. **Main Menu**:
+    Upon launching, you will be presented with a modern CLI interface:
+    - `[ 1 ] Scan for a particular location`
+    - `[ 2 ] Detect keylogger automatically`
+    - `[ 3 ] Exit`
+
+2. **Taking Action**:
+    - If a threat is detected during the active network monitor (`Option 2`), the console will alert you immediately.
+    - You will be given sub-options to **Find Location**, **Terminate Process**, **Remove File**, or manage your **Whitelists** to refine scanning over time.
+
+---
+
+### 📸 Screenshots
+
+<details>
+<summary>Click to view interface screenshots</summary>
+<br>
+
+![Interface 1](https://drive.google.com/uc?export=view&id=1gz11l-cM2_yQqo9hI1ZtIFadRA_KLUDH)
+
+![Interface 2](https://drive.google.com/uc?export=view&id=1tYl4sIZIH2Kfm8UbI1wZPpaQTLBAWk8G)
+
+![Interface 3](https://drive.google.com/uc?export=view&id=1F2QmNXrDn2qm-DEq5pjABszVzwZdR0Th)
+
+</details>
